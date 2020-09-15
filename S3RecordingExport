@@ -87,7 +87,7 @@ function executeJob(id){
 
 function getRecordingJobs(){
     return recordingApi.getRecordingJobs({
-        pageeSize: 25,
+        pageSize: 25,
         pageNumber: 1,
         sortBy: 'userId', // or 'dateCreated'
         state: 'READY', // valid values FULFILLED, PENDING, READY, PROCESSING, CANCELLED, FAILED
